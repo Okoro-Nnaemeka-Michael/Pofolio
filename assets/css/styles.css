@@ -1,0 +1,627 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow", serif;
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* main */
+ 
+/* intro section */
+.intro {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../images/p8.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(41, 39, 39);
+    background-blend-mode: overlay;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden-p {
+    display: none;
+}
+
+.intro  h1{
+    position: relative;
+    top: 40%;
+    left: 33%;
+    color: rgba(204, 83, 3, 0.884);
+    font-size: 40px;
+}
+
+.intro p {
+    color: white;
+    position: relative;
+    top: 46%;
+    left: 38%;
+    font-size: 25px;
+    max-width: 360px;
+    line-height: 40px;
+}
+.intro button {
+    position: relative;
+    top: 54%;
+    left: 45%;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid rgba(204, 83, 3, 0.884);;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 20px;
+
+}
+.intro button:hover {
+    background-color: rgba(204, 83, 3, 0.884);
+    border: 2px solid #fff;
+    color: #000;
+}
+
+/* section */
+
+section {
+    font-size: 22px;
+    padding: 30px 150px;
+    margin: 20px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* about */
+
+.my-img-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 30px 0;
+}
+
+.img-con {
+    background-color: gray;
+    width: 350px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 5px solid #c9c5c5;
+}
+
+.img-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(70%);
+}
+
+/* projects */
+
+.project-con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;   /* keep them centered */
+}
+
+.projects-item {
+    flex: 1 1 250px;           /* min width 250px, grows if space allows */
+    max-width: 250px;          /* optional limit */
+    height: 300px;
+    background: gray;
+    border: 2px solid #7a7979;
+    border-radius: 5px;
+}
+
+.project-img-con {
+    height: 50%;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-desc-con {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(24, 23, 23);
+    font-size: 16px;
+    padding: 8px;
+    text-align: justify;
+}
+
+.language {
+    width: 90%;
+    height: 40px;
+    background-color: rgba(204, 83, 3, 0.884);
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+/* skills */
+
+.skill-card-con {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;                 /* adds spacing between cards */
+    justify-content: center;   /* keeps them centered */
+}
+
+.skill-card {
+    flex: 1 1 200px;           /* min width 200px, grow if space allows */
+    max-width: 250px;          /* optional upper limit */
+    height: 200px;
+    background-color: rgba(204, 83, 3, 0.884);
+    border: 2px solid #fff;
+    border-radius: 15px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+
+.skill-card:hover {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid rgba(204, 83, 3, 0.884);
+}
+
+.fa-brands {
+    font-size: 35px;
+}
+
+.contact-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 40px;
+
+}
+.contact-img {
+    height: 85vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: gray;
+    flex: 1;
+    flex-basis: 300px;
+    /* border: 2px solid rgba(204, 83, 3, 0.884); */
+    /* border-radius: 15px; */
+}
+
+.contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+form {
+    margin-left: 25px;
+    width: 80%;
+    height: auto;
+    flex: 1;
+    flex-basis: 300px;
+    /* background-image: url(images/pimage5.avif); */
+}
+
+form label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+form input, form textarea {
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    padding-left: 15px;
+    color: #000;
+}
+
+form button {
+    width: 100%;
+    font-size: 20px;
+    background-color: rgba(204, 83, 3, 0.884);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+form button:hover {
+    background-color: transparent;
+    border: 2px solid rgba(204, 83, 3, 0.884);
+    color: #fff;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    /* padding-bottom: 40px; */
+    font-size: 18px;
+}
+.social-media {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.social-media span {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.footer-contact {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.copyright {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    background: rgba(204, 83, 3, 0.884);
+    color: white;
+    border: none;
+    border-radius: 70%;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.scroll-btn:hover {
+    background: #fff;
+    color: black;
+}
+
+/* responsiveness */
+@media (max-width: 1115px) {
+
+    .intro h1 {
+        font-size: 33px;
+    }
+
+    .intro p {
+        font-size: 23px;
+        left: 36%;
+        top: 46%;
+        max-width: 330px;
+    }
+
+    .intro button {
+        left: 43%;
+        top: 50%;
+    }
+
+}
+
+@media (max-width: 975px) {
+    
+    .intro h1 {
+        font-size: 30px;
+        left: 32%;
+        top: 37%;
+    }
+
+    .intro p {
+        font-size: 22px;
+        left: 34%;
+        top: 40%;
+    }
+
+    .intro button {
+        left: 42%;
+        top: 46%;
+        padding: 13px;
+    }
+        .projects {
+        padding: 30px 30px;
+        margin: 20px 0;
+    }
+
+    form {
+        margin-left: 0;
+    }
+
+    .about, .projects, skills {
+        padding: 20px 100px;
+    }
+
+
+    .contact {
+        padding: 20px 70px;
+    }
+
+    .skill-card-con {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .intro {
+        background-image: url(../images/pofolio2.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+        left: 25%;
+        top: 30%;
+    }
+
+    .intro p {
+        font-size: 25px;
+        left: 30%;
+        max-width: 400px;
+        top: 34%;
+    }
+
+    .intro button {
+        left: 42%;
+        top: 46%;
+    }
+
+}
+
+@media (max-width: 710px) {
+
+    .intro h1 {
+        left: 18%;
+        top: 30%;
+    }
+
+    .intro p {
+        left: 25%;
+    }
+
+    .intro button {
+        left: 43%;
+    }
+
+    .social-media, .footer-contact, .copyright {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+
+
+@media (max-width: 735px) {
+       
+    .projects, .contact {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact {
+        padding: 20px 100px;
+    }
+    form {
+        margin-left: 0;
+    }
+    .about {
+        padding: 20px 70px;
+    }
+
+    .skills {
+        padding: 20px 40px;
+    }
+
+    .skill-card-con {
+        max-width: 100%;
+    }
+
+    .projects-item {
+        margin: 40px 20px;
+    }
+
+    .contact-img {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 610px) {
+    .intro {
+        width: 100%;
+        height: 50vh;
+    }
+    .intro h1 {
+        left: 18%;
+        top: 30%;
+        font-size: 30px;
+    }
+
+    .intro p {
+        left: 25%;
+        font-size: 20px;
+        max-width: 300px;
+    }
+
+    .intro button {
+        left: 37%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 595px) {
+    .project-con, .skill-card-con {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-con {
+        width: 300px;
+        aspect-ratio: 1/1;
+    }
+
+    .contact {
+        padding: 20px 60px;
+        font-size: 22px;
+    }
+
+    .about {
+        padding: 20px 50px;
+        font-size: 22px;
+    }
+    
+    .skill-card-con {
+        max-width: 100%;
+    }
+
+    .contact-img {
+        height: 50vh;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .intro h1 {
+        left: 15%;
+        top: 22%;
+    }
+
+    .intro p {
+        left: 22%;
+    }
+
+    footer {
+        padding: 10px 20px;
+    }
+    .about {
+        padding: 10px 20px;
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+@media (max-width: 430px) {
+    .intro h1 {
+        left: 5%;
+        top: 22%;
+    }
+
+    .intro p {
+        left: 13%;
+    }
+
+    .intro button {
+        left: 32%;
+        padding: 8px;
+
+    }
+    .img-con {
+        width: 250px;
+        aspect-ratio: 1/1;
+    }
+    .contact {
+        padding: 20px 20px;
+    }
+
+    .contact label, .contact input {
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+
+    .intro h1 {
+        font-size: 24px;
+        left: 12%;
+    }
+
+    .intro p {
+        font-size: 16px;
+        max-width: 70%;
+        left: 17%;
+
+    }
+
+    .intro button {
+        font-size: 16px;
+        left: 35%;
+    }
+}
+@media (max-width: 336px) {
+    .intro h1 {
+        font-size: 22px;
+        left: 12%;
+    }
+
+    .intro p {
+        font-size: 16px;
+        max-width: 80%;
+        left: 12%;
+
+    }
+
+    .intro button {
+        font-size: 14px;
+        left: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .intro h1 {
+        left: 9%;
+    }
+
+    .intro p {
+        max-width: 75%;
+        left: 13%;
+
+    }
+    .intro button {
+        font-size: 14px;
+        left: 34%;
+    }
+}
