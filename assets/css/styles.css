@@ -7,6 +7,9 @@
 
 body {
     font-family: "Barlow", serif;
+    /* font-family: 'lato'; */
+    /* font-family: 'poppins'; */
+    /* font-family: 'Courier New', Courier, monospace; */
     background-color: black;
     color: #fff;
     overflow-x: hidden;
